@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import {ref} from "vue";
-
-let counter = ref(0)
+import {store} from "@/store/store";
 </script>
 
 <template>
   <main>
-    <h1>{{ counter }}</h1>
-    <button @click="counter++">Click</button>
+    <h1>{{ store.counter }}</h1>
+    <button @click="store.increment">Click</button>
   </main>
 </template>
 
