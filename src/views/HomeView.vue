@@ -5,7 +5,10 @@ import {store} from "@/store/store";
 <template>
   <main>
     <h1>{{ store.counter }}</h1>
-    <button @click="store.increment">Click</button>
+    <button @click="store.addHistory">Click</button>
+    <RouterLink to="/history">
+      <button>Ver Historico</button>
+    </RouterLink>
   </main>
 </template>
 
@@ -22,6 +25,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 
 h1 {

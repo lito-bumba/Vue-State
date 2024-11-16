@@ -1,10 +1,18 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+
+import HomeView from "@/views/HomeView.vue";
+import HistoryView from "@/views/HistoryView.vue";
 </script>
 
 <template>
-  <RouterView />
+  <div class="container-app">
+    <HomeView style="flex: 1"/>
+    <HistoryView style="flex: 1"/>
+  </div>
 </template>
 
 <style scoped>
+.container-app {
+  display: flex;
+}
 </style>
