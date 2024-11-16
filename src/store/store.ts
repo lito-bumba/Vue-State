@@ -3,18 +3,8 @@ import {getCurrentDateTime} from "../../utils/DateTime";
 
 export const store = reactive({
     counter: 0,
-    histories: [
-        {id: 1, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 2, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 3, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 4, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 5, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 6, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 7, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 8, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 9, number: 43, dateTime: '16/11/2024 03:16'},
-        {id: 10, number: 43, dateTime: '16/11/2024 03:16'},
-    ],
+    isHistoryVisible: false,
+    histories: [],
     addHistory() {
         this.counter++;
         const item = {

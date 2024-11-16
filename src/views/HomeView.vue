@@ -7,7 +7,9 @@ import {store} from "@/store/store";
     <h1>{{ store.counter }}</h1>
     <button @click="store.addHistory">Click</button>
     <RouterLink to="/history">
-      <button>Ver Historico</button>
+      <button @click="store.isHistoryVisible = !store.isHistoryVisible">
+        Ver Historico
+      </button>
     </RouterLink>
   </main>
 </template>
